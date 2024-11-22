@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medinho Books</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Gêneros</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Terror cosmico</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Horror</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Suspense</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Terror psicológico</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Slash</a>
+        </li>
+      </ul>
+      <img src="img/spuki.png" alt="Logo da Alurabooks" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Medinho</b>Books</h1>
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Gêneros</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Suspense</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Slash</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Horror</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Terror cósmico</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Terror psicológico</a>
+          </li>
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">Minha coleção</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+        <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">No carrinho</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Procurando livros assustadores é aqui.</h2>
+    <p class="banner__texto">Encontre em uma vasta gama de livros do gênero horror e se divirta ou melhor tenha medo!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Descubra o seu proximo livro">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">lançamentos</h2>
+
+    <div class="carrossel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/imagem 1.jpeg"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="img/imagem 2.jpeg"
+              alt="Livro sobre liderança em design design da alura books"></div>
+          <div class="swiper-slide"><img src="img/imagem 3.jpeg" alt="Livro sobre javascript assertivo da alura books">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/imagem 4.jpeg" alt="Livro Guia front end" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/imagem 5.jpeg" alt="Livro sobre portugol" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/imagem 6.jpeg" alt="Livro sobre acessibilidade" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Spooky scary skeletons</h3>
+            <h2 class="descrição__titulo-livro">By Skibid</h2>
+            <p class="descrição__texto">
+              Canção Skeleton vai animar seu esqueleto 
+            </p>
+          </div>
+          <img src="img/skeleton.png" class="descrição__imagem" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar livro" />
+            </li>
+            <li class="botões__item">
+              <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+            </li>
+          </ul>
+          <a href="#" class="botões__ancora">Assistir</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/imagem 5.jpeg"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="img/imagem 4.jpeg" alt="Livro sobre liderança em design da alura books">
+          </div>
+          <div class="swiper-slide"><img src="img/imagem 3.jpeg" alt="Livro sobre javascript assertivo da alurabooks">
+          </div>
+          <div class="swiper-slide"><img src="img/imagem 1.jpeg" alt="Livro Guia front end"></div>
+          <div class="swiper-slide"><img src="img/imagem 2.jpeg" alt="Livro sobre portugol"></div>
+          <div class="swiper-slide"><img src="img/imagem 6.jpeg" alt="livro sobre acessibilidade"></div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <!-- 1º linha -->
+        <div class="card__descrição">
+          <!-- 1º coluna -->
+          <div class="descrição">
+            <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+            <h3 class="descrição__titulo">Autor do Mês</h3>
+            <h2 class="descrição__titulo-livro">Howard Phillips Lovecraft</h2>
+            <p class="descrição__texto"> escritor americano dos gêneros de weird fiction, ficção científica, fantasia e terror.
+            </p>
+          </div>
+          <!-- 2º coluna -->
+          <img src="img/lovecraft.jfif" class="descrição__imagem">
+        </div>
+
+        <!-- 2º linha -->
+        <div class="card__botões">
+          <!-- 1º coluna -->
+          <ul class="botões">
+            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+            <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+          </ul>
+          <!-- 2º coluna -->
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Terror cósmico</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Terror psicológico</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Autores famosos</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Horror</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Slash</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Old Horror</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Livros famosos</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Suspense</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Atualizações de livros, promoções e outros.
+      </p>
+    </div>
+    <input type="email" placeholder="        Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo"></h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">TABLET</li>
+      <li class="lista-rodapé__item">
+        <img src="img/Tablet2.png" alt="Logo da Caelum" />
+        
+      </li>
+      
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">COMPUTADOR</li>
+      <li class="lista-rodapé__item">
+        <img src="img/PC2.png" alt="Logo da Alura" />
+        
+      </li>
+      
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">CELULAR</li>
+      <li class="lista-rodapé__item">
+        <img src="img/Celular.png" alt="Logo do Hipsters ponto Tech" />
+        
+      </li>
+      
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>
